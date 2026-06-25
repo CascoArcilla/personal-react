@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { HiMenu, HiX } from 'react-icons/hi'
-import { useTheme } from '../../context/ThemeContext'
-import { HiSun, HiMoon } from 'react-icons/hi'
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiMenu, HiX } from "react-icons/hi";
+import { useTheme } from "../../context/ThemeContext";
+import { HiSun, HiMoon } from "react-icons/hi";
 
 const links = [
-  { href: '#hero', label: 'Inicio' },
-  { href: '#about', label: 'Sobre mí' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Proyectos' },
-  { href: '#contact', label: 'Contacto' },
-]
+  { href: "#hero", label: "Inicio" },
+  { href: "#about", label: "Sobre mí" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Proyectos" },
+  { href: "#contact", label: "Contacto" },
+];
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function Navbar() {
             Norberto
           </a>
           <div className="flex items-center gap-8">
-            {links.map(link => (
+            {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -39,7 +39,7 @@ export default function Navbar() {
               className="p-2 rounded-lg bg-surface-alt dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors"
               aria-label="Cambiar tema"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <HiSun className="w-4 h-4 text-yellow-400" />
               ) : (
                 <HiMoon className="w-4 h-4 text-primary" />
@@ -52,10 +52,14 @@ export default function Navbar() {
       {/* Mobile hamburger (visible above 768 to keep theme toggle accessible) */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 p-2.5 rounded-lg bg-white/90 dark:bg-[#0f172a]/90 backdrop-blur-md shadow-lg text-text"
+        className="md:hidden fixed top-4 left-4 z-50 p-2.5 rounded-lg bg-surface-alt dark:bg-white/20 backdrop-blur-md shadow-lg text-text text-red"
         aria-label="Menú"
       >
-        {menuOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
+        {menuOpen ? (
+          <HiX className="w-6 h-6" />
+        ) : (
+          <HiMenu className="w-6 h-6" />
+        )}
       </button>
 
       {/* Mobile menu overlay */}
@@ -72,12 +76,12 @@ export default function Navbar() {
               initial={{ x: -300 }}
               animate={{ x: 0 }}
               exit={{ x: -300 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
               className="w-64 h-full bg-white dark:bg-[#0f172a] p-6 pt-20 shadow-xl"
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col gap-4">
-                {links.map(link => (
+                {links.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
@@ -93,5 +97,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
