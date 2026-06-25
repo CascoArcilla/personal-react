@@ -1,9 +1,12 @@
-import { motion } from 'framer-motion'
-import { HiArrowDown } from 'react-icons/hi'
+import { motion } from "framer-motion";
+import { HiArrowDown } from "react-icons/hi";
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6 pt-16">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-6 pt-16"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,14 +17,14 @@ export default function Hero() {
             Hola, mi nombre es
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-text dark:text-white mb-4">
-            Rasel.
+            Norberto Montalvo
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-text-muted dark:text-gray-400 mb-6">
-            Desarrollo y diseño frontend.
+            Ingeniero en Sistemas Computacionales
           </h2>
           <p className="max-w-xl mx-auto text-text-muted dark:text-gray-400 text-lg mb-8">
-            Especializado en crear experiencias digitales modernas, rápidas y accesibles
-            con React, TypeScript y TailwindCSS.
+            Enfocado en el desarrollo de software y soluciones web, gestionando
+            proyectos bajo metodologías ágiles
           </p>
           <motion.a
             href="#projects"
@@ -43,7 +46,7 @@ export default function Hero() {
             href="#about"
             className="inline-flex flex-col items-center gap-2 text-text-muted dark:text-gray-400"
             animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           >
             <span className="text-sm">Conoce más</span>
             <HiArrowDown className="w-5 h-5" />
@@ -51,5 +54,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
