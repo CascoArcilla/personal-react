@@ -12,12 +12,12 @@ const contactLinks = [
 
 export default function ContactInfo() {
   return (
-    <section id="contact" className="py-20 px-6 bg-surface-alt dark:bg-white/[0.02]">
+    <section id="contact" className="py-20 px-6 bg-surface-alt dark:bg-surface-alt">
       <div className="max-w-4xl mx-auto text-center">
         <SectionTitle subtitle="Contacto" title="Hablemos" />
 
         <motion.p
-          className="text-text-muted dark:text-gray-400 text-lg mb-10 max-w-lg mx-auto"
+          className="text-text-muted dark:text-text-muted text-lg mb-10 max-w-lg mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -42,7 +42,7 @@ export default function ContactInfo() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-6 py-3 rounded-xl bg-surface dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-primary/30 dark:hover:border-primary/40 transition-colors text-text dark:text-white font-medium"
+                className="flex items-center gap-3 px-6 py-3 rounded-xl bg-surface dark:bg-white/5 border border-gray-200 dark:border-white/10 hover:border-primary/30 dark:hover:border-primary/40 transition-colors text-text dark:text-text font-medium"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >

@@ -16,13 +16,13 @@ export default function Hero() {
           <p className="text-primary font-mono text-sm tracking-widest uppercase mb-4">
             Hola, mi nombre es
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-text dark:text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-text dark:text-text mb-4">
             Norberto Montalvo
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-text-muted dark:text-gray-400 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-text-muted dark:text-text-muted mb-6">
             Ingeniero en Sistemas Computacionales
           </h2>
-          <p className="max-w-xl mx-auto text-text-muted dark:text-gray-400 text-lg mb-8">
+          <p className="max-w-xl mx-auto text-text-muted dark:text-text-muted text-lg mb-8">
             Enfocado en el desarrollo de software y soluciones web, gestionando
             proyectos bajo metodologías ágiles
           </p>
@@ -44,7 +44,7 @@ export default function Hero() {
         >
           <motion.a
             href="#about"
-            className="inline-flex flex-col items-center gap-2 text-text-muted dark:text-gray-400"
+            className="inline-flex flex-col items-center gap-2 text-text-muted dark:text-text-muted"
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           >

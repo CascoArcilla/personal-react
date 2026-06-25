@@ -62,16 +62,21 @@ pnpm lint       # Linter (oxlint)
 
 ### Sistema de Colores (Brand Palette)
 - **Modo Claro:**
-  - Fondo: #FDFBF8
-  - Primario: #591848 | Secundario: #8C0D48
-  - Acento (CTA): #F2B705
-  - Alerta: #F24130
+  - Fondo: #FEFCFB | Alt: #F7F3F0
+  - Primario: #F97316 | Light: #FB923C | Dark: #EA580C
+  - Secundario: #059669
+  - Acento (CTA): #D97706 | Light: #F59E0B
+  - Alerta: #DC2626
+  - Texto: #1C1917 | Muted: #78716C
 - **Modo Oscuro:**
-  - Fondo: #1A1619
-  - Primario: #E09DC5 | Secundario: #F26D9E
-  - Acento (CTA): #F2B705
-  - Alerta: #FF7A6D
-- Utiliza siempre el color de fondo #FDFBF8 (claro) o #1A1619 (oscuro) como base y asegúrate de que el contraste de texto cumpla con WCAG AA.
+  - Fondo: #0A0A0A | Alt: #171717
+  - Primario: #FB923C | Light: #FED7AA | Dark: #EA580C
+  - Secundario: #4ADE80
+  - Acento (CTA): #FBBF24 | Light: #FDE68A
+  - Alerta: #F87171
+  - Texto: #FEFCFB | Muted: #A3A3A3
+- Tokens definidos en `@theme {}` con overrides en `.dark {}` via CSS variables
+- Asegúrate de que el contraste de texto cumpla con WCAG AA.
 
 ### Routing
 - Sin React Router

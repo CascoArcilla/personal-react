@@ -15,7 +15,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <div className="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-2xl bg-gradient-to-br from-primary to-accent p-1">
-              <div className="w-full h-full rounded-2xl bg-surface dark:bg-[#0f172a] flex items-center justify-center">
+              <div className="w-full h-full rounded-2xl bg-surface dark:bg-surface flex items-center justify-center">
                 <span className="text-6xl">👨‍💻</span>
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-text-muted dark:text-gray-400 space-y-4"
+            className="text-text-muted dark:text-text-muted space-y-4"
           >
             <p>
               Soy un desarrollador frontend apasionado por crear interfaces modernas, 

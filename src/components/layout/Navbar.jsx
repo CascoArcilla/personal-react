@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden md:flex fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-[#0f172a]/80 backdrop-blur-md border-b border-gray-200 dark:border-white/10">
+      <nav className="hidden md:flex fixed top-0 left-0 right-0 z-40 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-black/10 dark:border-white/10">
         <div className="max-w-6xl mx-auto w-full px-6 h-16 flex items-center justify-between">
           <a href="#hero" className="text-xl font-bold text-primary">
             Norberto
@@ -29,7 +29,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-text-muted dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-colors"
+                className="text-sm text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary-light transition-colors"
               >
                 {link.label}
               </a>
@@ -77,7 +77,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: -300 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="w-64 h-full bg-white dark:bg-[#0f172a] p-6 pt-20 shadow-xl"
+              className="w-64 h-full bg-surface dark:bg-surface p-6 pt-20 shadow-xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col gap-4">
@@ -86,7 +86,7 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="text-lg font-medium text-text dark:text-white hover:text-primary transition-colors"
+                    className="text-lg font-medium text-text dark:text-text hover:text-primary transition-colors"
                   >
                     {link.label}
                   </a>
