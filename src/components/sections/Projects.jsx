@@ -40,10 +40,10 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-text dark:text-white mb-2">
+                  <h3 className="text-lg font-semibold text-text dark:text-text mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-text-muted dark:text-gray-400 mb-4 line-clamp-2">
+                  <p className="text-sm text-text-muted dark:text-text-muted mb-4 line-clamp-2">
                     {project.description}
                   </p>
 
@@ -51,7 +51,7 @@ export default function Projects() {
                     {project.tech.map(t => (
                       <span
                         key={t}
-                        className="text-[11px] px-2 py-0.5 rounded bg-gray-100 dark:bg-white/5 text-text-muted dark:text-gray-400"
+                        className="text-[11px] px-2 py-0.5 rounded bg-gray-100 dark:bg-white/5 text-text-muted dark:text-text-muted"
                       >
                         {t}
                       </span>
@@ -75,7 +75,7 @@ export default function Projects() {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-sm font-medium text-text-muted dark:text-gray-400 hover:text-primary transition-colors"
+                        className="flex items-center gap-1 text-sm font-medium text-text-muted dark:text-text-muted hover:text-primary transition-colors"
                       >
                         <HiCode className="w-4 h-4" />
                         Código

@@ -10,7 +10,7 @@ const links = [
 
 export default function MobileNav() {
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/90 dark:bg-[#0f172a]/90 backdrop-blur-md border-t border-gray-200 dark:border-white/10 safe-area-bottom">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface/90 dark:bg-surface/90 backdrop-blur-md border-t border-black/10 dark:border-white/10 safe-area-bottom">
       <div className="flex items-center justify-around h-16 px-2">
         {links.map(link => {
           const Icon = link.icon
@@ -18,7 +18,7 @@ export default function MobileNav() {
             <a
               key={link.href}
               href={link.href}
-              className="flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg text-text-muted dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-colors active:scale-95"
+              className="flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary-light transition-colors active:scale-95"
             >
               <Icon className="w-5 h-5" />
               <span className="text-[10px] font-medium">{link.label}</span>

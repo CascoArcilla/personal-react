@@ -8,7 +8,7 @@ export default function SkillBadge({ name, icon: Icon, level, learning }) {
       transition={{ type: 'spring', stiffness: 300 }}
     >
       <Icon className={`w-8 h-8 ${learning ? 'text-accent' : 'text-primary'}`} />
-      <span className="text-sm font-medium text-text dark:text-white text-center">{name}</span>
+      <span className="text-sm font-medium text-text dark:text-text text-center">{name}</span>
       {learning && (
         <span className="text-[10px] font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
           Aprendiendo

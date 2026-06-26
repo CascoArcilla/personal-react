@@ -5,7 +5,7 @@ import { skillCategories } from '../../data/skills'
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-6 bg-surface-alt dark:bg-white/[0.02]">
+    <section id="skills" className="py-20 px-6 bg-surface-alt dark:bg-surface-alt">
       <div className="max-w-6xl mx-auto">
         <SectionTitle subtitle="Conocimientos" title="Tecnologías y herramientas" />
 
@@ -18,7 +18,7 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: catIdx * 0.1 }}
             >
-              <h3 className="text-lg font-semibold text-text dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-lg font-semibold text-text dark:text-text mb-4 flex items-center gap-2">
                 {category.title}
                 {category.title === 'Aprendiendo' && (
                   <span className="text-xs bg-accent/10 text-accent px-2 py-0.5 rounded-full">
