@@ -33,7 +33,7 @@ jobs:
         pnpm build
 
     - name: Deploy to GitHub Pages
-      if: matrix.node-version == '22.x' && (github.event_name == 'push' || github.event_name == 'merge')
+      if: matrix.node-version == '24.x' && (github.event_name == 'push' || github.event_name == 'merge')
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist
