@@ -1,18 +1,19 @@
-import { motion } from 'framer-motion'
-import { HiMail } from 'react-icons/hi'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import SectionTitle from '../ui/SectionTitle'
+import { motion } from "framer-motion";
+import { HiMail } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import SectionTitle from "../ui/SectionTitle";
 
 const contactLinks = [
-  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/tu-usuario' },
-  { icon: FaLinkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/tu-usuario' },
-  { icon: FaTwitter, label: 'Twitter', href: 'https://twitter.com/tu-usuario' },
-  { icon: HiMail, label: 'Email', href: 'mailto:tu@email.com' },
-]
+  { icon: FaGithub, label: "GitHub", href: "https://github.com/CascoArcilla" },
+  { icon: HiMail, label: "Email", href: "mailto:normon1230@gmail.com" },
+];
 
 export default function ContactInfo() {
   return (
-    <section id="contact" className="py-20 px-6 bg-surface-alt dark:bg-surface-alt">
+    <section
+      id="contact"
+      className="py-20 px-6 bg-surface-alt dark:bg-surface-alt"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <SectionTitle subtitle="Contacto" title="Hablemos" />
 
@@ -23,8 +24,8 @@ export default function ContactInfo() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          ¿Tienes un proyecto en mente o simplemente quieres conectar?
-          ¡Estoy abierto a nuevas oportunidades!
+          ¿Tienes un proyecto en mente o simplemente quieres conectar? ¡Estoy
+          abierto a nuevas oportunidades!
         </motion.p>
 
         <motion.div
@@ -34,8 +35,8 @@ export default function ContactInfo() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          {contactLinks.map(link => {
-            const Icon = link.icon
+          {contactLinks.map((link) => {
+            const Icon = link.icon;
             return (
               <motion.a
                 key={link.label}
@@ -49,10 +50,10 @@ export default function ContactInfo() {
                 <Icon className="w-5 h-5 text-primary" />
                 {link.label}
               </motion.a>
-            )
+            );
           })}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
