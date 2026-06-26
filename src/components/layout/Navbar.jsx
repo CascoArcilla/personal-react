@@ -29,7 +29,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-text-muted dark:text-text-muted hover:text-primary dark:hover:text-primary-light transition-colors"
+                className="text-sm p-2 rounded text-text-muted dark:text-text-muted hover:text-text hover:bg-primary dark:hover:bg-primary dark:hover:text-text transition-colors"
               >
                 {link.label}
               </a>
