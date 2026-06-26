@@ -50,7 +50,7 @@ export default function About() {
               entregas continuas.
             </p>
             <p>
-              Me gusta seguir aprendiendo: actualmente me encuentro mejorando
+              Actualmente me encuentro mejorando
               mis habilidades con Linux, aprendiendo sobre el ecosistema de
               .NET, aquitecturas limpias y comprendiendo las bases del desarrollo
               con IA. Disfruto trabajar en equipo, liderar iniciativas técnicas

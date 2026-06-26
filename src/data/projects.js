@@ -1,52 +1,65 @@
+import blackJack from "../assets/images/black-jack.webp";
+import turitezoSw from "../assets/images/turitezo-sw.webp";
+import ecController from "../assets/images/ec_controll.webp";
+
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce App',
-    description: 'Plataforma de comercio electrónico con carrito de compras, autenticación y pagos integrados.',
-    tech: ['React', 'Node.js', 'MongoDB', 'TailwindCSS'],
-    image: null,
-    status: 'completed',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Simple Black Jack",
+    description:
+      "Juego creado por diversion, es un Black Jack jugable directamente en el navegador para un jugador.",
+    tech: ["Vite", "JavaScrpt", "HTTML", "TailwindCSS", "GitHub Actions"],
+    image: blackJack,
+    status: "completado",
+    liveUrl: "https://cascoarcilla.github.io/vanilla-blackjack/",
+    repoUrl: "https://github.com/CascoArcilla/vanilla-blackjack",
   },
   {
     id: 2,
-    title: 'Dashboard Analytics',
-    description: 'Panel de administración con gráficos interactivos, filtros dinámicos y exportación de datos.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-    image: null,
-    status: 'completed',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Turitezo, api web",
+    description:
+      "Un api web para la aplicacion de Turitezo, creado para mostrar los lugares turisticos de un municipio.",
+    tech: ["PHP", "MySQL", "CSS", "Docker"],
+    image: turitezoSw,
+    status: "completado",
+    liveUrl: "https://turitezo-service-web.onrender.com/",
+    repoUrl: "https://github.com/CascoArcilla/turitezo-serviceweb",
   },
   {
     id: 3,
-    title: 'Portfolio Personal',
-    description: 'Mi página personal construida con Vite, React y TailwindCSS, con modo oscuro y animaciones.',
-    tech: ['React', 'Vite', 'TailwindCSS', 'Framer Motion'],
-    image: null,
-    status: 'completed',
-    liveUrl: '#',
-    repoUrl: '#',
+    title: "Turitezo Android",
+    description:
+      "La aplicación para el proyecto Turitezo, creada para mostrar los lugares turisticos de mi municipio.",
+    tech: ["Android", "Android Studio", "Kotlin", "Retrofit"],
+    video: "https://www.youtube.com/embed/SDv79hfHUSk",
+    status: "completado",
+    repoUrl: "https://github.com/CascoArcilla/turitezo-android",
   },
   {
     id: 4,
-    title: 'Clon de Trello',
-    description: 'Aplicación de gestión de tareas estilo Kanban con drag & drop y colaboración en tiempo real.',
-    tech: ['React', 'TypeScript', 'Node.js', 'Socket.io'],
-    image: null,
-    status: 'in-progress',
-    liveUrl: null,
-    repoUrl: '#',
+    title: "Portfolio Personal",
+    description:
+      "Mi página personal construida con Vite, React y TailwindCSS, con modo oscuro y animaciones. (La que miras ahora)",
+    tech: ["React", "Vite", "TailwindCSS", "Framer Motion"],
+    status: "en-progreso",
+    repoUrl: "https://github.com/CascoArcilla/personal-react",
   },
   {
     id: 5,
-    title: 'SaaS Starter',
-    description: 'Template para aplicaciones SaaS con autenticación, suscripciones y dashboard.',
-    tech: ['Next.js', 'Prisma', 'Stripe', 'TailwindCSS'],
-    image: null,
-    status: 'in-progress',
-    liveUrl: null,
-    repoUrl: '#',
+    title: "EC Controller",
+    description:
+      "Un sistema para el control de consumo electrico y estimacion de costos (no incluye hardware).",
+    tech: ["Express", "PostgreSQL", "React", "TailwindCSS", "Docker", ""],
+    image: ecController,
+    status: "en-progreso",
+    repoUrl: "https://github.com/CascoArcilla/wats-control",
   },
-]
+  {
+    id: 6,
+    title: "Senso Lab MX",
+    description:
+      "Trabajando para mostrarlo, es un sistema para agilizar la recolección y exportación de datos sensoriales.",
+    tech: ["Python", "Django", "TailwindCSS", "Docker", "MySQL"],
+    status: "completado",
+  },
+];
