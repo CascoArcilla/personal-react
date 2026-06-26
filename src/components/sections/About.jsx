@@ -52,7 +52,7 @@ export default function About() {
             <p>
               Me gusta seguir aprendiendo: actualmente me encuentro mejorando
               mis habilidades con Linux, aprendiendo sobre el ecosistema de
-              .NET, aquitecturas limpia y comprendiendo las bases del desarrollo
+              .NET, aquitecturas limpias y comprendiendo las bases del desarrollo
               con IA. Disfruto trabajar en equipo, liderar iniciativas técnicas
               y compartir conocimientos.
             </p>
