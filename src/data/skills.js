@@ -1,52 +1,73 @@
 import {
-  FaReact, FaNodeJs, FaPython, FaGitAlt, FaFigma, FaDocker,
-  FaHtml5, FaCss3Alt, FaJsSquare,
+  FaReact, FaNodeJs, FaPython, FaGitAlt, FaDocker,
+  FaHtml5, FaFigma, FaGithub,
 } from 'react-icons/fa'
 import {
-  SiTailwindcss, SiTypescript, SiNextdotjs, SiExpress, SiMongodb,
-  SiPostgresql, SiPrisma, SiFramer, SiVite, SiRedux, SiFirebase,
+  SiTailwindcss, SiDjango, SiRemix, SiMysql, SiPostgresql,
+  SiMongodb, SiMariadb, SiApache, SiJira, SiSlack,
+  SiAndroidstudio, SiBlender, SiInkscape, SiKotlin,
+  SiBootstrap, SiDotnet, SiJavascript, SiLinux, SiPhp,
+  SiFastapi,
 } from 'react-icons/si'
 
 export const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Lenguajes de Programación',
     skills: [
-      { name: 'React', icon: FaReact, level: 90 },
-      { name: 'TypeScript', icon: SiTypescript, level: 80 },
-      { name: 'JavaScript', icon: FaJsSquare, level: 90 },
-      { name: 'HTML5', icon: FaHtml5, level: 95 },
-      { name: 'CSS3', icon: FaCss3Alt, level: 90 },
-      { name: 'TailwindCSS', icon: SiTailwindcss, level: 85 },
-      { name: 'Next.js', icon: SiNextdotjs, level: 70 },
-      { name: 'Framer Motion', icon: SiFramer, level: 65 },
-      { name: 'Redux', icon: SiRedux, level: 75 },
+      { name: 'JavaScript', icon: SiJavascript },
+      { name: 'Python', icon: FaPython },
+      { name: 'C# (.NET)', icon: SiDotnet },
+      { name: 'PHP', icon: SiPhp },
+      { name: 'Kotlin', icon: SiKotlin },
     ],
   },
   {
-    title: 'Backend',
+    title: 'Desarrollo Web',
     skills: [
-      { name: 'Node.js', icon: FaNodeJs, level: 80 },
-      { name: 'Express', icon: SiExpress, level: 75 },
-      { name: 'Python', icon: FaPython, level: 60 },
+      { name: 'Django', icon: SiDjango },
+      { name: 'React', icon: FaReact },
+      { name: 'Node.js', icon: FaNodeJs },
+      { name: 'Remix', icon: SiRemix },
+      { name: 'HTML5', icon: FaHtml5 },
+      { name: 'Bootstrap', icon: SiBootstrap },
+      { name: 'Tailwind CSS', icon: SiTailwindcss },
     ],
   },
   {
-    title: 'Herramientas',
+    title: 'Bases de Datos',
     skills: [
-      { name: 'Git', icon: FaGitAlt, level: 85 },
-      { name: 'Docker', icon: FaDocker, level: 50 },
-      { name: 'Figma', icon: FaFigma, level: 70 },
-      { name: 'Vite', icon: SiVite, level: 80 },
-      { name: 'Firebase', icon: SiFirebase, level: 65 },
+      { name: 'MySQL', icon: SiMysql },
+      { name: 'MariaDB', icon: SiMariadb },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+      { name: 'MongoDB', icon: SiMongodb },
     ],
   },
   {
-    title: 'Aprendiendo',
+    title: 'Infraestructura y Despliegue',
     skills: [
-      { name: 'Prisma', icon: SiPrisma, level: 40, learning: true },
-      { name: 'PostgreSQL', icon: SiPostgresql, level: 45, learning: true },
-      { name: 'MongoDB', icon: SiMongodb, level: 50, learning: true },
-      { name: 'TypeScript Avanzado', icon: SiTypescript, level: 0, learning: true },
+      { name: 'Docker', icon: FaDocker },
+      { name: 'Apache', icon: SiApache },
+      { name: 'Linux', icon: SiLinux },
+      { name: 'Git', icon: FaGitAlt },
+      { name: 'GitHub', icon: FaGithub },
+    ],
+  },
+  {
+    title: 'Metodologías y Gestión',
+    skills: [
+      { name: 'Scrum', icon: SiJira },
+      { name: 'Jira', icon: SiJira },
+      { name: 'Slack', icon: SiSlack },
+      { name: 'Figma', icon: FaFigma },
+    ],
+  },
+  {
+    title: 'Otros',
+    skills: [
+      { name: 'API REST', icon: SiFastapi },
+      { name: 'Android Studio', icon: SiAndroidstudio },
+      { name: 'Blender', icon: SiBlender },
+      { name: 'Inkscape', icon: SiInkscape },
     ],
   },
 ]
