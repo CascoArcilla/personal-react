@@ -4,6 +4,7 @@ import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
+import Experience from './components/sections/Experience'
 import ContactInfo from './components/sections/ContactInfo'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Experience />
         <ContactInfo />
       </Layout>
     </ThemeProvider>
