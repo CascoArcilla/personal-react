@@ -11,30 +11,20 @@ jobs:
     permissions:
       contents: write
 
-    strategy:
-      matrix:
-        node-version: [24.x]
-
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 24
 
-    - name: Enable pnpm
-      run: |
-        corepack enable pnpm
+    - run: corepack enable pnpm
 
-    - name: Build
-      run: |
-        pnpm install
-        pnpm build
+    - run: pnpm install --frozen-lockfile
 
-    - name: Deploy to GitHub Pages
-      if: matrix.node-version == '24.x' && (github.event_name == 'push' || github.event_name == 'merge')
-      uses: JamesIves/github-pages-deploy-action@v4
+    - run: pnpm build
+
+    - uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist
         branch: gh-pages
