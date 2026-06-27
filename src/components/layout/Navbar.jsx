@@ -1,19 +1,8 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { HiMenu, HiX } from "react-icons/hi";
-import { useTheme } from "../../context/ThemeContext";
 import { HiSun, HiMoon } from "react-icons/hi";
-
-const links = [
-  { href: "#hero", label: "Inicio" },
-  { href: "#about", label: "Sobre mí" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Proyectos" },
-  { href: "#contact", label: "Contacto" },
-];
+import { useTheme } from "../../context/ThemeContext";
+import { navLinks } from "../../data/navLinks";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -25,7 +14,7 @@ export default function Navbar() {
             Norberto
           </a>
           <div className="flex items-center gap-8">
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -48,54 +37,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-
-      {/* Mobile hamburger (visible above 768 to keep theme toggle accessible) */}
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden fixed top-4 left-4 z-50 p-2.5 rounded-lg bg-surface-alt dark:bg-white/20 backdrop-blur-md shadow-lg text-text text-red"
-        aria-label="Menú"
-      >
-        {menuOpen ? (
-          <HiX className="w-6 h-6" />
-        ) : (
-          <HiMenu className="w-6 h-6" />
-        )}
-      </button>
-
-      {/* Mobile menu overlay */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="md:hidden fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
-            onClick={() => setMenuOpen(false)}
-          >
-            <motion.nav
-              initial={{ x: -300 }}
-              animate={{ x: 0 }}
-              exit={{ x: -300 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="w-64 h-full bg-surface dark:bg-surface p-6 pt-20 shadow-xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex flex-col gap-4">
-                {links.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="text-lg font-medium text-text dark:text-text hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </motion.nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 }
