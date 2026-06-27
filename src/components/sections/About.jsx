@@ -50,11 +50,10 @@ export default function About() {
               entregas continuas.
             </p>
             <p>
-              Actualmente me encuentro mejorando
-              mis habilidades con Linux, aprendiendo sobre el ecosistema de
-              .NET, aquitecturas limpias y comprendiendo las bases del desarrollo
-              con IA. Disfruto trabajar en equipo, liderar iniciativas técnicas
-              y compartir conocimientos.
+              Actualmente me encuentro mejorando mis habilidades con Linux,
+              aprendiendo sobre el ecosistema de .NET, arquitecturas limpias y
+              comprendiendo las bases del desarrollo con IA. Disfruto trabajar
+              en equipo y compartir conocimientos.
             </p>
             <div className="flex flex-wrap gap-3 pt-4">
               {[
