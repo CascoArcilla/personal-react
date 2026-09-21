@@ -1,10 +1,10 @@
 import {
   FaReact, FaNodeJs, FaPython, FaGitAlt, FaDocker,
-  FaHtml5, FaFigma, FaGithub,
+  FaHtml5, FaFigma, FaGithub, FaSlack
 } from 'react-icons/fa'
 import {
   SiTailwindcss, SiDjango, SiRemix, SiMysql, SiPostgresql,
-  SiMongodb, SiMariadb, SiApache, SiJira, SiSlack,
+  SiMongodb, SiMariadb, SiApache, SiJira,
   SiAndroidstudio, SiBlender, SiInkscape, SiKotlin,
   SiBootstrap, SiDotnet, SiJavascript, SiLinux, SiPhp,
   SiFastapi,
@@ -57,7 +57,7 @@ export const skillCategories = [
     skills: [
       { name: 'Scrum', icon: SiJira },
       { name: 'Jira', icon: SiJira },
-      { name: 'Slack', icon: SiSlack },
+      { name: 'Slack', icon: FaSlack },
       { name: 'Figma', icon: FaFigma },
     ],
   },
