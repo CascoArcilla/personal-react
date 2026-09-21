@@ -39,6 +39,6 @@ export const certifications = [
     id: 7,
     title: 'Fundamentos de Linux | Intermediate',
     issuer: 'Cisco Networking Academy',
-    status: 'en-progreso',
+    status: 'completado',
   },
 ]
